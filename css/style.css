@@ -1,0 +1,66 @@
+html, body {
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #200045;
+		color: #D6D6F5;
+		min-height: 100%;
+}
+
+img {
+		padding: 10px;
+}
+
+a {
+		color: #D6D6F5;
+		font-weight: bold;
+		text-decoration: none;
+}
+
+a:hover {
+		color: white;
+}
+
+ul {
+    list-style-image: url('../assets/owl-sm.png');
+}
+
+ul li {
+		padding-bottom: 15px;
+}
+
+div.container {
+		outline-style: solid;
+		outline-color: #FFFF00;
+		border-style: solid;
+		border-color: #AA8800;
+		padding: 15px;
+		margin: 10px;
+		margin-top: 25px;
+		background-color: #060606;
+}
+
+div#header {
+		text-align: center;
+}
+
+.subheader {
+		margin-top: -10px;
+		opacity: 79%;
+}
+
+h1 {
+		color: #FF3000;
+}
+
+main {
+		min-height: calc(100vh - 100px);
+}
+
+footer {
+		height: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+		text-align: center;
+}
