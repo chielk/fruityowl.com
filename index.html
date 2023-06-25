@@ -33,18 +33,17 @@
 						<div class="container">
 								<h2>The internet</h2>
 								<p>
-								The internet has never had a center. It started when two computers were
-								connected together, and expanded as more machines were added.
+								The internet has never had a center. It started when two computers were connected
+								together, and expanded as more machines were added.
 								</p>
 
 								<p>
 								In essence, all those machines are equal. Some are large, like the university
-								mainframes that were the first computers on the internet, or the servers in
-								data centers, and some are small, like your phone.
-								But each machine that's connected to the internet is in principle able to
-								function as a server (like hosting a website), or as a client (like browsing a
-								website), or a network router, though some machines are more fit for some roles
-								than others.
+								mainframes that were the first computers on the internet, or the servers in data
+								centers, and some are small, like your phone.
+								But each machine that's connected to the internet is in principle able to function
+								as a server (like hosting a website), or as a client (like browsing a website), or a
+								network router, though some machines are more fit for some roles than others.
 								</p>
 
 								<p>
@@ -54,55 +53,110 @@
 								your packages through a different route, and you probably wouldn't even notice.
 								</p>
 
-								<h3>A decentralised internet</h3>
+								<h3>A centralised internet</h3>
 								<p>
-								The decentralised character of the internet is what makes it so powerful. It
-								makes it very difficult for someone to prevent you from accessing a specific
-								web service.
+								The decentralised character of the internet is what makes it so powerful. It makes
+								it very difficult for someone to prevent you from accessing a specific web service
+								without preventing your access altogether.
 								</p>
 
 								<p>
+								<a id="four-websites"
+										href="https://nitter.net/badnetworker/status/1133363823728091136"><img
+										src="assets/four-websites.png" alt="David Masad @badnetworker 28 May 2019
+1999: there are millions of websites all hyperlinked together
+2019: there are four websites, each filled with screenshots of the other three." /></a>
 								One of the ways someone can try to prevent you from accessing a website is by
-								blocking a service's DNS.
+								blocking a service's DNS. This becomes a bigger problem as a larger more of the
+								internet is hosted on fewer domains.
 								</p>
 
 								<p>
-								Since domain names have to be unique, they are centrally registered. And while
-								there are multiple DNS servers and a lot of redundancy built into the system,
-								it remains controlled by a central authority, and in a way a
-								single point of failure.
+								Since domain names have to be unique, they are centrally registered. And while there
+								are multiple DNS servers and a lot of redundancy built into the system, it remains
+								controlled by a central authority, and in a way a single point of failure.
 								</p>
 
 								<p>
-								Another way in which the internet is not very decentralised, is that large
-								parts of the internet run on the servers of a few large cloud platforms. But if
-								a cloud platform decides to evict your website from their servers, you can
-								always move it to a different server.
+								Another way in which the internet is not very decentralised, is that large parts of
+								the internet run on the servers of a few large cloud platforms. But if a cloud
+								platform decides to evict your website from their servers, you can always move it to
+								a different server.
 								</p>
 
 								<p>
-								In order to be able to move to a different server, it is important that you can
-								use the same tools you had on the original platform. To do this, it helps if
-								the tools you use are <a href="https://www.fsf.org/about/">free software</a>.
+								In order to be able to move to a different server, it is important that you can use
+								the same tools you had on the original platform. To do this, it helps if the tools
+								you use are <a href="https://www.fsf.org/about/">free software</a>.
 								</p>
 
 								<p>
-								Another important condition is that the server to which you move your website
-								is treated the same by the internet service providers. If an ISP runs a
-								competitor to your website, they may be motivated to sabotage your website by
-								making it slower for their clients. That's why it's important to have 
-								<a href="https://en.wikipedia.org/wiki/Net_neutrality">network neutrality</a>.
+								Another important condition is that the server to which you move your website is
+								treated the same by the internet service providers. If an ISP runs a competitor to
+								your website, they may be motivated to sabotage your website by making it slower
+								for their clients. That's why it's important to have <a
+												href="https://en.wikipedia.org/wiki/Net_neutrality">network neutrality</a>.
+								</p>
+
+								<h3>The Fediverse</h3>
+								<p>
+								The fediverse is a collection of protocols, applications, servers, websites, and
+								people that function in a decentralised way. The idea of the fediverse is that there
+								is not a central entity, such as Twitter or TikTok at the center of social
+								interaction, but a whole network of independent yet interconnected, i.e. federated
+								services.
+								</p>
+
+								<p>
+								A concrete example of federation, that anyone using the internet is familiar with,
+								is email. Email is not a website or a company, but a protocol (or rather a set of
+								protocols). There are different servers with different hostnames that provide email,
+								and you don't need to be on the same server to send emails to other people. You can
+								use web interfaces or different mobile applications to access your email, and with
+								enough know-how you can set up your own email server that federates with other
+								servers.
+								</p>
+
+								<p>
+								A large part of the fediverse uses <a
+										href="https://www.w3.org/TR/activitypub/">ActivityPub</a>. This includes <a
+										href="https://joinmastodon.org/">Mastodon</a> (similar to Twitter), <a
+										href="https://join-lemmy.org/">Lemmy</a> and <a
+										href="https://kbin.pub/en">kbin</a>
+								(similar to Reddit), <a href="https://pixelfed.org/">Pixelfed</a> (similar to
+								Instagram), <a href="https://joinpeertube.org/">PeerTube</a> (a video platform), and
+								many more.
+								</p>
+
+								<p>
+								When you are on one Mastodon server (instance), you can interact with people on a
+								different instance. But because these platforms all use ActivityPub, you can even
+								interact with Pixelfed or PeerTube users. Some protocols don't use ActivityPub,
+								such as <a href="https://matrix.org/">Matrix</a> (secure chat platform) can't
+								interact with other platforms, but some platforms, such as <a
+										href="https://diasporafoundation.org/">Diaspora*</a>Can interact with certain
+								ActivityPub platforms.
+								</p>
+
+								<p>
+								When looking at for example the Join Mastodon website, you'll often see a list of
+								<a href="https://joinmastodon.org/servers">servers</a> and a list of <a
+									 href="https://joinmastodon.org/apps">apps</a>, because everyone can add a server
+							  or create an app to interact with the network. Mastodon even allows you to move your
+								contacts to an account on a different server.
 								</p>
 
 								<h3>Fruity Owl</h3>
 								<p>
-								So why does this web page look like this? For no other reason than that it
-								reminds me of what the internet was before big money had entered the space, and
-								decided what good web design looks like, while also not throwing everything out
-								that we learned along the way.
+								So why does this web page look like this? For no other reason than that it reminds
+								me of what the internet was before big money had entered the space, and decided what
+								good web design looks like, while also not throwing everything out that we learned
+								along the way.
+								</p>
 
-								The logos at the top represent two cherries and an owl for no particular
-								reason, other than that it goes with the name Fruity Owl.
+								<p>
+								The logos at the top represent two cherries and an owl for no particular reason,
+								other than that it goes with the name Fruity Owl.
 								</p>
 						</div>
 								
@@ -113,9 +167,26 @@
 												<a target="_blank" rel="noopener"
 													 href="https://github.com/chielk">My Github page</a>
 										</li>
+										<li>
+												<a target="_blank" rel="noopener"
+													 href="https://mas.to/@chielk">My Mastodon profile</a>
+										</li>
 								</ul>
 
-								<h3>Other pages of interest</h3>
+								<h3>Other interesting pages</h3>
+								<ul>
+										<li>
+												<a target="_blank" rel="noopener"
+													 href="https://ciechanow.ski/mechanical-watch/">Mechanical Watch</a>
+										</li>
+										<li>
+												<a target="_blank" rel="noopener"
+													 href="https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/"
+													 >Xenofeminism (2015)</a>
+										</li>
+								</ul>
+
+								<h3>Friends' pages</h3>
 								<ul>
 										<li>
 												<a target="_blank" rel="noopener"
@@ -130,7 +201,7 @@
 				</main>
 
 				<footer>
-						<p>&copy; Chiel Kooijman <s>2001</s> 2021</p>
+						<p>&copy; Chiel Kooijman <s>2001</s> 2021-2023</p>
 				</footer>
 		</body>
 </html>
