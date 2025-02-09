@@ -41,6 +41,11 @@ div.container {
 	background-color: #060606;
 }
 
+div.date {
+	text-align: right;
+	font-weight: bold;
+}
+
 div#header {
 	padding: 30px;
 	background-color: #000000;
@@ -92,4 +97,9 @@ footer {
 	width: 100%;
 	text-align: center;
 }
+
+img.copyleft {
+	filter: invert(100%);
+	width: 1em;
+	padding: 0;
 
