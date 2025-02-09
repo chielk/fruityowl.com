@@ -100,6 +100,10 @@ footer {
 
 img.copyleft {
 	filter: invert(100%);
-	width: 1em;
+	width: .8em;
 	padding: 0;
+}
 
+.strikethrough {
+  background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
